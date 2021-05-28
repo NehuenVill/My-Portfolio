@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="GDD.html">Growing Degree Days Tracker</a></li>
+							<li><a href="copyai.html">Copy.ai Automated Bot</a></li>
+							<li><a href="pdftotext.html">PDF to Text Converter</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1><a href="https://github.com/JohnSolutions/Copy.ai-Bot">Copy.ai Automated Bot</a></h1>
+							<p>This is a Python/Selenium based program that automates the act of retrieving descpritions from Copi.ai webpage (a webpage dedicated to create descriptions for any kind of thing the user wants to generate a description for), where the client only has to log in and the programm will submit all the necesary data to get descriptions and afterwards, retrieve them and store them into a Mongo data base.</p>
+							<p>The program works this way: The client has to put all the parameters of their mongo database in the code, also some parameters to make more specified descriptions (in this case, this parameters are replaced by "prfx" and "sufx" as an example), next they have to excecute the code (in this case directly in the CMD).</p>
+							<span class="image main"><img src="images/copy_ai_img_1.png" alt="" /></span>
+							<p>The program starts and gets to the login page, where the client has to log in themselves and click the "log in" button in the mail that copy.ai sends them to log in.</p>
+							<span class="image main"><img src="images/copy_ai_img_2.png" alt="" /></span>
+							<p>Next the program will writte the descriptions and parameters given by the client (in this case the data is located in a JSON file) in the proper fields, once for each product the client wants to get a description for.</p>
+							<span class="image main"><img src="images/copy_ai_img_3.png" alt="" /></span>
+							<p>Once all the descriptions of the product or thing are retrieved they are sent to a MongoDB data base, and the same process starts over for each one of the products.</p>
+							<span class="image main"><img src="images/copy_ai_img_4.png" alt="" /></span>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

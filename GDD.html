@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Growing Degree Days Tracker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="GDD.html">Growing Degree Days Tracker</a></li>
+							<li><a href="copyai.html">Copy.ai Automated Bot</a></li>
+							<li><a href="pdftotext.html">PDF to Text Converter</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1><a href="https://github.com/JohnSolutions/Growing-Degree-Days-Tracker">Growing Degree Days Tracker</a></h1>
+							<p>This is a Django/Python based program for private use to control plagues in different farms from Guatemala, South America, where its main functionality is to calculate the growing degree days (A measurement used by farmers and gardeners to measure to growing speed of plants and plagues) acummulated between a certain date (specified by the client) and today, considering different parammeters, also specified by the client, such as the nearest weather location to the farm and the kind of plague they are having on it, showing the GDDs acummulated according to each day in a graph, so that they can take the best method to control the plague according to its growing stage.</p>
+							<p>The programm works this way: On the main page, the client submits the nearest location to the farm, the first day they saw any of the five different plagues and, finally, select the plague they are having on their farm using the dorpdown menu.</p>
+							<span class="image main"><img src="images/GDD_img_1.png" alt="" /></span>
+							<p>After submitting the data and going to the trackers page by clickig the "see trackers" link, the program will take all the parametters and according to the range of days between the start date and the current day will send it, day by day, to a one or other weather API (eiter a common weather API and the NASA's weather API) deppending on the date. All the data retrieved from the API for each day, such as the maximun and minimun temperature, the GDDs of that day and the GDDs accumulated by that day, is stored in a SQL data base, where the programm can access later.</p>
+							<span class="image main"><img src="images/GDD_img_3.png" alt="" /></span>
+							<span class="image main"><img src="images/GDD_img_4.png" alt="" /></span>
+							<p>Once the trackers page loaded all the data, it is displayed on the page, also displaying the evolution of the GDDs throughout the time.</p>
+							<span class="image main"><img src="images/GDD_img_2.png" alt="" /></span>
+							<p>The client can add as many GDD trackers as they want, they'll always be available in the trackers page and will also update the information everyday when they open the page.</p>
+							<h3>Skills used in this project</h3>
+							<ul>
+								<li>Python Programing Language</li>
+								<li>Django Framework</li>
+								<li>SQL Programing language</li>
+								<li>SQL Databases</li>
+								<li>Usage of APIs</li>
+							</ul>
+						
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
